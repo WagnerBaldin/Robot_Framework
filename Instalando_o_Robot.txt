@@ -1,0 +1,164 @@
+
+Vendio a versão do Pip que está instalana na máquina:
+
+pip --version
+pip 23.2.1 
+
+--------------------------------------------
+
+Comando para instalar o Robot Framework
+
+https://robotframework.org/?tab=1#getting-started
+
+--------------------------
+pip install robotframework
+--------------------------
+robot --version
+--------------------------
+
+
+Para atualizar uma versão do Robot
+
+--------------------------
+pip install -U robotframework
+---------------------------
+
+Instalando Libraries para fazer testes
+
+
+https://robotframework.org/#resources
+
+https://github.com/robotframework/SeleniumLibrary/
+
+https://github.com/robotframework/SeleniumLibrary/#installation
+
+
+Comando para instalar a Biblioteca Selenium Library
+
+---------------------------
+pip install --upgrade robotframework-seleniumlibrary
+----------------------------
+pip install robotframework-requests
+----------------------------
+
+
+Comando para instalar a Biblioteca Requests Library
+
+----------------------------
+pip install robotframework-requests
+----------------------------
+
+Successfully installed!!!
+
+
+Conferindo as Bibliotecas instaladas
+
+----------------------------
+pip list
+----------------------------
+
+Apareceça várias... Essas são as que acabou de instalar...
+
+
+requests                       2.31.0
+robotframework                 6.1.1
+robotframework-pythonlibcore   4.2.0
+robotframework-requests        0.9.5
+robotframework-seleniumlibrary 6.1.2
+selenium                       4.12.0
+
+--------------------------------------------
+
+Editor para robot Framework
+
+Robot Framework Language Server
+
+https://marketplace.visualstudio.com/items?itemName=robocorp.robotframework-lsp
+
+--------------------------------------------
+
+Web Drivers
+
+
+Fazer a busca:
+
+----------------------
+chromedriver download
+----------------------
+
+https://chromedriver.chromium.org/downloads
+
+Versão do Google:
+
+Version 117.0.5938.92
+
+https://googlechromelabs.github.io/chrome-for-testing/#stable
+https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/117.0.5938.92/win64/chromedriver-win64.zip
+
+
+---------------------------------------
+
+Versão do Firefox:
+
+Version 117.0.1
+
+https://github.com/mozilla/geckodriver/releases
+https://github.com/mozilla/geckodriver/releases/download/v0.33.0/geckodriver-v0.33.0-win64.zip
+
+---------------------------------------
+
+Environment Variables
+
+Copiar o Path e abrir no explore a pasta do Python
+
+C:\Users\Wagner\AppData\Local\Programs\Python\Python311\Scripts
+
+Colar os dois arquivos de Drivers baixados aqui.
+Extrair os arquivos compactados
+
+chromedriver.exe
+geckodriver.exe
+
+---------------------------------
+
+Atenção!!
+
+Toda vez que for atualizado o navegador, esse arquivos devem também
+ser atualizados.
+
+-----------------------------------
+
+Vendo as versões dos Drivers:
+
+chromedriver --version
+ChromeDriver 117.0.5938.92
+
+geckodriver --version
+geckodriver 0.33.0
+
+-----------------------------------
+
+Entrar na Chrome Web Store
+
+https://chrome.google.com/webstore/category/extensions?hl=pt-br
+
+Digitar na busca: truepath
+
+Instalar TruePath
+
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

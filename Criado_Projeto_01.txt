@@ -1,0 +1,41 @@
+Minha pasta:
+
+C:\RobotFramework\WebTesting
+
+Inserindo a Documentação
+
+[Documentation]"  "No mínimo dois espaços após a instrução de Documentation dentro
+dos colchetes []. Podem ter mais espaços, mas sempre acima de 2.
+
+Espaços simples no Robot são identificados como frases.
+
+As tags (etiquetas) no Robot Framework têm a função de categorizar e marcar testes 
+ou casos de teste de forma a organizar, filtrar e selecionar quais testes serão 
+executados em um determinado momento. Elas são usadas para atribuir metadados aos 
+casos de teste e fornecer uma maneira flexível de gerenciar e executar testes de 
+acordo com critérios específicos.
+
+
+Exemplo
+
+Teste de Cadastro de Usuário
+    [Tags]    cadastro    acceptance
+
+
+Setup - É alo que vc programa pro Robot fgazer antes dele rodar um teste ou antes
+dele rodar uma switch
+
+Switch de testes - é o arquivo.robot que é criado com as instruções do caso de teste
+
+É possivel fazer uma ação antes da Switch rodar ou antes de cada teste rodar.
+
+Tear down - executa alguma coisa ao final de toda a Switch ou ao final de cada teste.
+
+Abrindo e fechando o Browser em cada teste individual
+
+*** Settings ***
+configurando o caso de teste
+
+
+
+ 

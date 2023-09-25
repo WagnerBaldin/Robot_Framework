@@ -1,0 +1,70 @@
+Os "Web Drivers" são componentes essenciais quando se trabalha com o 
+Robot Framework ou com qualquer outra ferramenta de automação de testes 
+web. Eles são responsáveis por permitir que o Robot Framework interaja com 
+navegadores da web de forma automatizada, simulando ações de um usuário 
+real. Aqui estão os principais pontos sobre os Web Drivers em relação ao 
+Robot Framework:
+
+1. O que são Web Drivers:
+   - Os Web Drivers são componentes específicos para diferentes navegadores 
+   da web (por exemplo, Chrome, Firefox, Edge) que permitem a automação 
+   desses navegadores.
+   - Eles são fornecidos pelos desenvolvedores dos navegadores e atuam como 
+   uma ponte entre a ferramenta de automação (como o Robot Framework) e o 
+   navegador.
+
+2. Uso no Robot Framework:
+   - Ao usar o Robot Framework para automação de testes web, você precisa 
+   selecionar e configurar o Web Driver correspondente ao navegador que 
+   deseja automatizar.
+   - O Robot Framework possui bibliotecas específicas, como a SeleniumLibrary, 
+   que dependem dos Web Drivers para interagir com os navegadores.
+
+3. Configuração do Web Driver:
+   - Para configurar um Web Driver no Robot Framework, você precisa fornecer 
+   o caminho para o executável do Web Driver e outras opções de configuração, como a versão do navegador que você está usando.
+   - A configuração pode ser feita em arquivos de recursos ou diretamente 
+   nas etapas de automação dos testes.
+
+4. Exemplo de Uso:
+   - Para usar o Web Driver do Chrome com o Robot Framework, você pode 
+   configurá-lo assim:
+
+   ```
+   * Settings *
+   Library    SeleniumLibrary
+
+   * Variables *
+   ${BROWSER}    Chrome
+   ${DRIVER_PATH}    path/to/chromedriver.exe
+
+   * Test Cases *
+   Exemplo de Teste Web
+       Open Browser    http://example.com    ${BROWSER}
+       Maximize Browser Window
+       [Resto das Etapas de Automação]
+       Close Browser
+   ```
+
+5. Compatibilidade do Web Driver:
+   - É importante notar que você deve usar a versão apropriada do 
+   Web Driver que corresponde à versão do navegador instalada em 
+   seu sistema. Incompatibilidades podem levar a erros ou falhas 
+   na automação.
+
+6. Web Drivers para Diferentes Navegadores:
+   - Existem Web Drivers específicos para diferentes navegadores, 
+   como o ChromeDriver para o Google Chrome, o GeckoDriver para o 
+   Mozilla Firefox, o EdgeDriver para o Microsoft Edge, etc.
+
+7. Atualizações de Web Drivers:
+   - Os Web Drivers são atualizados periodicamente pelos desenvolvedores 
+   dos navegadores para manter a compatibilidade com versões mais 
+   recentes dos navegadores. Portanto, é importante manter os Web 
+   Drivers atualizados para evitar problemas de automação.
+
+Em resumo, os Web Drivers são componentes cruciais ao usar o Robot 
+Framework para automação de testes web, pois permitem a interação 
+automatizada com navegadores da web. Certifique-se de configurar 
+e usar o Web Driver apropriado para o navegador que você pretende 
+automatizar.
